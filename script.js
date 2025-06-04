@@ -69,7 +69,7 @@ function showRandomEntry() {
     <img src="${currentEntry["ImageURL"]}" alt="${currentEntry["Name"]}"><br>
     <p><strong>Description:</strong> ${currentEntry["Description"]}</p>
     <div><strong>Instructions:</strong>${formatInstructions(currentEntry["Instructions"])} </div>
-    <div class="favorite-indicator">${isFavorite ? "★ Favorited" : ""}</div>
+    <div class="favorite-indicator">${isFavorite ? "♡ Favorited" : ""}</div>
     <button onclick="toggleFavorite()">${isFavorite ? "Remove from Favorites" : "Mark as Favorite"}</button>
   `;
 }
