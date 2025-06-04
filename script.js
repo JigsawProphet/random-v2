@@ -1,4 +1,4 @@
-
+// This JS should be saved as script.js and referenced by index.html
 let allEntries = [];
 let currentEntry = null;
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxvpHHptVU9GYzDcIoolYnB9SRrFZGzvwbv4bB4-1fqqbr1gOAx6o0frWQfkGIIg9SQ/exec";
@@ -91,8 +91,8 @@ function toggleFavorite() {
       loadCSV();
     })
     .catch(error => {
-      alert("Error toggling favorite");
-      console.error(error);
+      alert("Error toggling favorite: " + error);
+      console.error("Toggle Favorite Error:", error);
     });
 }
 
